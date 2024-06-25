@@ -113,9 +113,9 @@ async def hello_buttons(update, context):
 dialog = Dialog
 dialog.mode = None
 dialog.list = []
-chatgpt = ChatGptService(token="gpt:EG44JHCgWRZcE28XEIsgJFkblB3TKFPdeHKs9DxUsueSBurd")
+chatgpt = ChatGptService(token="chat token")
 
-app = ApplicationBuilder().token("7446599500:AAHMf5bxh3adgUlbTGz2BzZvw-8cBdZw7Og").build()
+app = ApplicationBuilder().token("your token").build()
 app.add_handler(CommandHandler("start", start))
 app.add_handler(CommandHandler("gpt", gpt))
 app.add_handler(CommandHandler("date", date))
